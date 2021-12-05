@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Maxim Yakimenko 2021 dec 4 1005-->
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		 
+		<title>exercice 1</title>
+		<style>
+			body{background-color:#F6F6EB; font-family:Calibri;}
+			h1{text-align:center; font-size:40px;}
+			select{background-color:#F6F6EB; width:150px; text-align:center; border:none; font-size:20px; overflow-y: auto;}
+			button{background-color:#F6F6EB; border:none; border-radius: 10px; width:150px; font-size:20px;}
+			button:hover{background-color:#FEDD9E;}
+			.top{background-color:#FEDD9E; height:auto; width:100%; float:left; height:auto;}
+			.middle{background-color:#FFB7B2; height:auto; width:100%; float:left; text-align:center; height:250px;}
+			.bot{background-color:#FEDD9E; height:auto; width:100%; float:left; text-align:center; font-size:20px;}	
+		</style>
+	</head>
+
+	<body>
+		<div style="height:200px;">
+			<br>
+		</div>
+		<div class="top">
+			<h1>Largest Salary Player per Year</h1>
+		</div>
+		<div class="middle">
+			<div style="height:30%;"><br></div>
+			<div>
+				<form>
+					<select name="year" id="year">
+						<option value="1985">	1985	</option>
+						<option value="1986">	1986	</option>
+						<option value="1987">	1987	</option>
+						<option value="1988">	1988	</option>
+						<option value="1989">	1989	</option>
+						<option value="1990">	1990	</option>
+						<option value="1991">	1991	</option>
+						<option value="1992">	1992	</option>
+						<option value="1993">	1993	</option>
+						<option value="1994">	1994	</option>
+						<option value="1995">	1995	</option>
+						<option value="1996">	1996	</option>
+						<option value="1997">	1997	</option>
+						<option value="1998">	1998	</option>
+						<option value="1999">	1999	</option>
+						<option value="2000">	2000	</option>
+						<option value="2001">	2001	</option>
+						<option value="2002">	2002	</option>
+						<option value="2003">	2003	</option>
+						<option value="2004">	2004	</option>
+						<option value="2005">	2005	</option>
+						<option value="2006">	2006	</option>
+						<option value="2007">	2007	</option>
+						<option value="2008">	2008	</option>
+						<option value="2009">	2009	</option>
+						<option value="2010">	2010	</option>
+						<option value="2011">	2011	</option>
+						<option value="2012">	2012	</option>
+						<option value="2013">	2013	</option>
+					</select>
+				</form>
+			</div>
+			<div style="height:20%;"><br></div>
+			<button onclick="func()">
+				launch
+			</button>
+			<div style="height:25%;"><br></div>
+		</div>
+		<div class="bot">
+			<p id="out"></p>
+		</div>
+		<script>
+		function func(){
+			var x = document.getElementById("year");
+			document.getElementById("out").innerHTML = x.options[ x.selectedIndex ].value;
+		}
+		
+		</script>
+	</body>
+</html>
